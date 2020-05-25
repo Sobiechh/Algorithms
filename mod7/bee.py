@@ -66,4 +66,3 @@ BeeAlgorithm(Sum_Squares, -10, 10, 5, True)
 BeeAlgorithm(Weierstrass, -10, 10, 5, True)
 BeeAlgorithm(Sum_Squares, -10, 10, 5, False)
 BeeAlgorithm(Weierstrass, -10, 10, 5, False)
-
