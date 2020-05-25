@@ -1,14 +1,13 @@
-from collections import defaultdict
+from collections import defaultdict #tylko do zrobienia dictionary
 
-
-class Graph:
+class BFS:
     def __init__(self):
         self.graph = defaultdict(list)
 
-    def addEdge(self, u, v):
+    def add(self, u, v):
         self.graph[u].append(v)
 
-    def BFS(self, s):
+    def algorytm(self, s):
         visited = [False] * (len(self.graph))
         queue = []
         queue.append(s)
@@ -22,11 +21,10 @@ class Graph:
                     visited[i] = True
 
 
-g = Graph()
-g.addEdge(0, 4)
-g.addEdge(0, 8)
-g.addEdge(4, 8)
-g.addEdge(8, 0)
-g.addEdge(8, 3)
-g.addEdge(3, 3)
-g.BFS(2)
+g = BFS()
+g.add(0, 6)
+g.add(0, 4)
+g.add(4, 3)
+g.add(3, 0)
+g.add(3, 4)
+g.algorytm(2)
